@@ -1,0 +1,114 @@
+header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    background-color: var(--secondary);
+    background: url('../../../assets/images/primary-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2rem 7%;
+}
+
+header .header-top{
+    border-bottom: .1rem solid rgba(255, 255, 255, .2);
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--branca);
+    opacity: 0.75;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 7%;
+}
+
+header .header-top .logo {
+    font-size: 4rem;
+    font-weight: bolder;
+    color: var(--primary);
+    text-transform: lowercase;
+}
+
+header .header-top .buttons{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: .8rem;
+    padding: .6rem 2.8rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.btn-large{
+    display: inline-block;
+    margin-top: .8rem;
+    cursor: pointer;
+    padding: 1.2rem 4rem;
+    font-size: 2.5rem;
+    border-radius: 8px;
+    transition: all 300ms linear;
+}
+
+.outlined{
+    border: .2rem solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+}
+
+
+.outlined:hover{
+    background: var(--primary);
+    color: var(--branca);
+}
+
+.contained{
+    border: .2rem solid var(--primary);
+    background: var(--primary);
+    color: var(--branca);
+}
+
+.contained:hover{
+    opacity: 0.7;
+}
+
+header .header-bottom{
+    display: flex;
+    position: absolute;
+    bottom: 0; right: 0; left: 0;
+    z-index: 1000;
+    background: var(--branca);
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 7%;
+    opacity: 0.7;
+    border-bottom: .1rem solid rgba(255, 255, 255, .2);
+}
+
+header .header-bottom .header-content{
+    /* max-width: 440px; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+header .header-bottom .header-content h2{
+    text-transform: none;
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+header .header-bottom .header-content h3{
+    font-size: 1.8rem;
+    color: gray;
+}
