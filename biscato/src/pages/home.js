@@ -1,11 +1,13 @@
 import React from 'react'
 import { Footer } from '../components'
-import { Header } from '../landing/components'
+import { About, Header, Services } from '../landing/components'
 
 const Homepage = () => {
   return (
     <div>
       <Header/>
+      <About/>
+      <Services/>
       <Footer/>
     </div>
   )
