@@ -19,7 +19,7 @@ const Header = () => {
           <h3>A riqueza de um homem é produto da sua capacidade de pensar</h3>
         </div>
         <div className="buttons">
-          <button className="btn-large contained">continuar</button>
+          <a href="#about" className="btn-large contained">continuar</a>
         </div>
       </div>
     </header>
